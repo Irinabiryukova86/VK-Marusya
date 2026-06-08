@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.movie-page {
+  color: white;
+}
+
+.container {
+  padding: 40px 0;
+}
+
+.hero--movie-page .movie-actions {
+  gap: 12px;
+}
+.hero--movie-page .btn--trailer {
+  padding: 16px 32px;
+}
+.hero--movie-page .btn--favorite {
+  padding: 16px 20px;
+}
+
+.movie-not-found {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.movie-details {
+  padding: 0;
+}
+.movie-details h2 {
+  font-size: 40px;
+  line-height: 48px;
+  padding: 0;
+  margin: 0 0 64px;
+}
+
+.movie-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  font-size: 18px;
+  color: #b0b0b0;
+}
+
+.movie-info-table {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.info-label {
+  color: #FFFFFF;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.info-label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  /* начинаем сразу после текста label */
+  right: -100%;
+  /* растягиваем до конца ячейки (до info-value) */
+  height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.5019607843) 0, rgba(255, 255, 255, 0.5019607843) 2px, transparent 2px, transparent 4px);
+  transform: translateX(-100%);
+  /* сдвигаем назад, чтобы начать от края текста */
+}
+
+.info-value {
+  grid-column: 2;
+  justify-self: start;
+  color: rgba(255, 255, 255, 0.8);
+  align-self: start;
+  margin-left: 0;
+  /* убираем лишние отступы */
+}/*# sourceMappingURL=Movie.css.map */

@@ -1,0 +1,276 @@
+@charset "UTF-8";
+.hero {
+  color: white;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero__container {
+  margin: 0 auto;
+  padding: 32px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__info {
+  flex: 1;
+  padding: 74px 0 0;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.movie-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.movie-info__rating {
+  display: flex;
+  gap: 4px;
+  background-color: #308E21;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.movie-title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.movie-description {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 60px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.movie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #393B3C;
+  color: white;
+}
+
+/* Активное состояние */
+.btn:active {
+  background: white;
+  color: black;
+  transform: scale(0.98);
+  transition: all 0.1s ease-in;
+}
+
+/* Наведение*/
+.btn:hover {
+  background: #67A5EB;
+  color: white;
+}
+
+/* Фокус */
+.btn:focus {
+  background: #45526E;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+/* Отключённое состояние */
+.btn:disabled {
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.5019607843);
+  cursor: not-allowed;
+}
+
+.hero__poster img {
+  width: 680px;
+  height: 552px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__content {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__info {
+    max-width: 100%;
+  }
+  .movie-meta {
+    grid-template-columns: 1fr;
+  }
+  .hero__poster img {
+    width: 100%;
+    height: auto;
+  }
+}
+.hero {
+  color: white;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero__container {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__info {
+  flex: 1;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.movie-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.movie-info__rating {
+  display: flex;
+  gap: 4px;
+  background-color: #308E21;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.movie-title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.movie-description {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 60px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.movie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #393B3C;
+  color: white;
+}
+
+/* Активное состояние */
+.btn:active {
+  background: white;
+  color: black;
+  transform: scale(0.98);
+  transition: all 0.1s ease-in;
+}
+
+/* Наведение */
+.btn:hover {
+  background: #67A5EB;
+  color: white;
+}
+
+/* Фокус */
+.btn:focus {
+  background: #45526E;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+/* Отключённое состояние */
+.btn:disabled {
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.5019607843);
+  cursor: not-allowed;
+}/*# sourceMappingURL=Hero.css.map */

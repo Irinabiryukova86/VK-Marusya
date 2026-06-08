@@ -1,0 +1,259 @@
+.login-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-form {
+  position: relative;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  padding: 64px 40px;
+  border-radius: 24px;
+  width: 420px;
+  text-align: center;
+}
+
+.logo-image {
+  width: 132.13px;
+  height: 29.5px;
+  margin: 0 0 40px;
+  background-color: transparent;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.success-message {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.login-name {
+  width: 108.8px;
+  height: 22.97px;
+  display: block;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 16px 16px 52px;
+  border: 1px solid var(--content-placeholder, rgba(0, 0, 0, 0.4));
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  outline: none;
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: border-color 0.3s ease;
+}
+.form-input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+.form-input:focus {
+  border-color: #B4A9FF;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.email-input,
+.password-input,
+.name-input,
+.confirm-password-input {
+  width: 100%;
+  padding: 16px 16px 16px 52px;
+  border: 1px solid var(--content-placeholder, rgba(0, 0, 0, 0.4));
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  outline: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.email-input.filled,
+.password-input.filled,
+.name-input.filled,
+.confirm-password-input.filled {
+  background-color: #F6F6F6;
+}
+
+.email-input::-moz-placeholder, .password-input::-moz-placeholder, .name-input::-moz-placeholder, .confirm-password-input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.email-input::placeholder,
+.password-input::placeholder,
+.name-input::placeholder,
+.confirm-password-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.email-input:focus,
+.password-input:focus,
+.name-input:focus,
+.confirm-password-input:focus,
+.email-input:hover,
+.password-input:hover,
+.name-input:hover,
+.confirm-password-input:hover {
+  border-color: #B4A9FF;
+  background-color: #F6F6F6;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.submit-btn,
+.switch-btn {
+  padding: 16px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #393B3C;
+  color: #FFFFFF;
+}
+.submit-btn:hover {
+  background-color: #67A5EB;
+}
+.submit-btn:focus {
+  background-color: #45526E;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.switch-btn {
+  background: transparent;
+  color: #000000;
+}
+
+.submit-btn--active {
+  background: #67A5EB;
+  color: #FFFFFF;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 0;
+  right: -72px;
+  width: 48px;
+  height: 48px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #000000;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.input-error,
+.email-input.input-error,
+.password-input.input-error,
+.name-input.input-error,
+.confirm-password-input.input-error {
+  border-color: #FF7575;
+  background-color: #F6F6F6;
+}
+
+.input-with-icon--error .input-icon path {
+  fill: #FF7575;
+}
+
+.registration-success-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 420px;
+  background: white;
+  padding: 64px 40px;
+  text-align: center;
+  border-radius: 24px;
+  z-index: 1001;
+  box-sizing: border-box;
+}
+
+.success-login-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #67A5EB;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}/*# sourceMappingURL=LoginForm.css.map */

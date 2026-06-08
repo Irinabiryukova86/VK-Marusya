@@ -1,0 +1,20 @@
+.login-btn {
+  padding: 8px 0;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.user-greeting {
+  padding: 8px 0;
+  border-bottom: 1.5px solid #DC5DFC;
+}
+
+.greeting-text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=UserProfile.css.map */

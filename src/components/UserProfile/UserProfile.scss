@@ -1,0 +1,33 @@
+.login-btn {
+  padding: 8px 0;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.mobile-hidden {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.user-profile {
+  padding: 8px 0;
+}
+
+.authenticated {
+  border-bottom: 1.5px solid #DC5DFC;
+}
+
+.greeting-text {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}

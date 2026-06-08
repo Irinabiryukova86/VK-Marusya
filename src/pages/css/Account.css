@@ -1,0 +1,126 @@
+.hero {
+  padding: 64px 0;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0 0 64px;
+}
+
+.account-options {
+  display: flex;
+  gap: 64px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+.option.active {
+  border-bottom: 1.5px solid #DC5DFC;
+}
+
+.option__name {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.option__icon {
+  color: #FFFFFF;
+}
+
+.account-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 0;
+  margin: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.user__profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.initials-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  min-width: 60px;
+}
+
+.value {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: right;
+  flex: 1;
+}
+
+.email-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-btn {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.logout-btn:hover {
+  background-color: #67A5EB;
+}
+.logout-btn:focus {
+  background-color: #45526E;
+  color: rgba(255, 255, 255, 0.5019607843);
+}/*# sourceMappingURL=Account.css.map */

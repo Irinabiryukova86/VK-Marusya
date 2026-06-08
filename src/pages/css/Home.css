@@ -1,0 +1,98 @@
+.movies-grid {
+  padding: 40px 0;
+}
+.movies-grid .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.movies-grid .movies-grid__title {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 64px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.movies-grid .movies-grid__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.movie-card {
+  position: relative;
+  width: calc(20% - 32px);
+  box-sizing: border-box;
+  max-height: 336px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card__number {
+  font-family: "Play";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 62px;
+  height: 48px;
+  background: #FFFFFF;
+  color: #6A5DC2;
+  font-weight: bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 50px;
+}
+
+.movie-card__poster {
+  width: 100%;
+  overflow: hidden;
+}
+.movie-card__poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-card__info {
+  padding: 0 12px 16px;
+  text-align: center;
+}
+
+.movie-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: white;
+  line-height: 1.2;
+}
+
+.movie-card__meta {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  font-size: 12px;
+  color: #B0B0B0;
+  margin-bottom: 4px;
+}
+
+.movie-card__year,
+.movie-card__rating {
+  white-space: nowrap;
+}
+
+.movie-card__genre {
+  font-size: 12px;
+  color: #808080;
+  margin: 0;
+}/*# sourceMappingURL=Home.css.map */
